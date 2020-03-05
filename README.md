@@ -1,4 +1,4 @@
-# An example project that uses tasks
+# An example Actionhero project that uses tasks
 
 This project contains:
 
