@@ -3,7 +3,7 @@ const actionhero = new Process();
 let api;
 
 describe("Task", () => {
-  describe("hello", () => {
+  describe("spawn-task", () => {
     beforeAll(async () => {
       api = await actionhero.start();
     });
@@ -17,10 +17,16 @@ describe("Task", () => {
     });
 
     test("can be enqueued", async () => {
-      await task.enqueue("hello", {});
-      const found = await specHelper.findEnqueuedTasks("hello");
+      await task.enqueue("spawn-task", {});
+      const found = await specHelper.findEnqueuedTasks("spawn-task");
       expect(found.length).toEqual(1);
       expect(found[0].timestamp).toBeNull();
+    });
+
+    test("running spawn-task will create new print-message tasks", async () => {
+      await specHelper.runTask("spawn-task", {});
+      const found = await specHelper.findEnqueuedTasks("print-message");
+      expect(found.length).toEqual(9);
     });
   });
 });

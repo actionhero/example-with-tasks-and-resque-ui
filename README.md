@@ -2,7 +2,7 @@
 
 This project contains:
 
-- A recurring task that says "hello" on the command line every 10 seconds
+- A recurring task that runs every 10 seconds, and then enqueues a few more tasks to run.
 - The `ah-resque-ui` plugin that will let you watch the status of this task at `http://localhost:8080/resque`
 
 _visit www.actionherojs.com for more information_
