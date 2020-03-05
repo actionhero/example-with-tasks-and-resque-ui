@@ -12,6 +12,6 @@ export class MyTask extends Task {
   }
 
   async run(data) {
-    log("say hello");
+    log("✨✨✨ HELLO!!! ✨✨✨");
   }
 }
