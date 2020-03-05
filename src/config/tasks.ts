@@ -34,7 +34,7 @@ export const DEFAULT = {
       // (have number > 0 to enable, and < 1 to disable)
       minTaskProcessors: 1,
       // at maximum, how many parallel taskProcessors should this node spawn?
-      maxTaskProcessors: 10,
+      maxTaskProcessors: 1,
       // how often should we check the event loop to spawn more taskProcessors?
       checkTimeout: 500,
       // how many ms would constitute an event loop delay to halt taskProcessors spawning?
