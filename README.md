@@ -1,5 +1,7 @@
 # An example Actionhero project that uses tasks
 
+![Node.js CI](https://github.com/actionhero/example-with-tasks-and-resque-ui/workflows/Node.js%20CI/badge.svg)
+
 This project contains:
 
 - A recurring task that runs every 10 seconds, and then enqueues a few more tasks to run.
