@@ -9,7 +9,7 @@ export class MyTask extends Task {
     this.queue = "default";
     this.middleware = [];
     this.inputs = {
-      message: { required: true }
+      message: { required: true },
     };
   }
 

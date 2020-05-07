@@ -17,7 +17,7 @@ export class MyTask extends Task {
     for (const i in sleepArray) {
       const number = sleepArray[i];
       await task.enqueueIn(number * 1000, "print-message", {
-        message: "Hello!"
+        message: "Hello!",
       });
     }
   }
