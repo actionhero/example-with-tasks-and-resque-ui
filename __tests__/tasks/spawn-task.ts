@@ -1,11 +1,10 @@
-import { Process, task, specHelper } from "actionhero";
+import { Process, task, specHelper, api } from "actionhero";
 const actionhero = new Process();
-let api;
 
 describe("Task", () => {
   describe("spawn-task", () => {
     beforeAll(async () => {
-      api = await actionhero.start();
+      await actionhero.start();
     });
 
     afterAll(async () => {
