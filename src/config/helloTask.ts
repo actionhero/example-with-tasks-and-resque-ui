@@ -1,5 +1,5 @@
 export const DEFAULT = {
-  helloTask: (config) => {
+  helloTask: () => {
     return {
       frequency: 1000 * 10,
     };
@@ -7,7 +7,7 @@ export const DEFAULT = {
 };
 
 export const production = {
-  helloTask: (config) => {
+  helloTask: () => {
     return {
       frequency: 1000 * 60 * 5,
     };

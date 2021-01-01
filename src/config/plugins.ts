@@ -1,7 +1,11 @@
+import { join } from "path";
+
 export const DEFAULT = {
-  plugins: (config) => {
+  plugins: () => {
     return {
-      "ah-resque-ui": { path: __dirname + "/../../node_modules/ah-resque-ui" },
+      "ah-resque-ui": {
+        path: join(__dirname, "..", "..", "node_modules", "ah-resque-ui"),
+      },
     };
   },
 };
