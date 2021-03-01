@@ -7,7 +7,7 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "actionhero": "25.0.5",
+    "actionhero": "25.0.6",
     "ah-resque-ui": "^2.0.4",
     "ioredis": "latest",
     "winston": "latest",
