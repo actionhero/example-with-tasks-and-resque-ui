@@ -11,7 +11,7 @@
     "ah-resque-ui": "^2.0.5",
     "ioredis": "^4.24.6",
     "winston": "^3.3.3",
-    "ws": "^7.4.4"
+    "ws": "^7.4.5"
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",
