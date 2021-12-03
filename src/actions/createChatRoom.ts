@@ -12,7 +12,14 @@ export class CreateChatRoom extends Action {
     };
   }
 
-  async run({ params, response }) {
-    response.didCreate = await chatRoom.add(params.name);
+  async run({ params }: { params: { name: string } }) {
+    let didCreate = false;
+
+    if (!(await chatRoom.exists(params.name))) {
+      await chatRoom.add(params.name);
+      didCreate = true;
+    }
+
+    return { name: params.name, didCreate };
   }
 }
