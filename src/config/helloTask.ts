@@ -1,5 +1,13 @@
+const namespace = "helloTask";
+
+declare module "actionhero" {
+  export interface ActionheroConfigInterface {
+    [namespace]: ReturnType<typeof DEFAULT[typeof namespace]>;
+  }
+}
+
 export const DEFAULT = {
-  helloTask: () => {
+  [namespace]: () => {
     return {
       frequency: 1000 * 10,
     };
@@ -7,7 +15,7 @@ export const DEFAULT = {
 };
 
 export const production = {
-  helloTask: () => {
+  [namespace]: () => {
     return {
       frequency: 1000 * 60 * 5,
     };
