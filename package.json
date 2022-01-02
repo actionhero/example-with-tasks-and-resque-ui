@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "actionhero": "28.1.2",
-    "ah-resque-ui": "^2.0.5",
+    "ah-resque-ui": "^3.0.1",
     "ioredis": "^4.28.2",
     "winston": "^3.3.3",
     "ws": "^8.4.0"
