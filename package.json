@@ -14,7 +14,7 @@
     "ws": "^8.4.2"
   },
   "devDependencies": {
-    "@types/jest": "^27.4.0",
+    "@types/jest": "^27.4.1",
     "@types/node": "^17.0.14",
     "jest": "^27.4.7",
     "prettier": "^2.5.1",
