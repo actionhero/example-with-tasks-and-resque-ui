@@ -7,20 +7,20 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
-    "actionhero": "28.1.11",
+    "actionhero": "28.1.14",
     "ah-resque-ui": "^3.0.1",
     "ioredis": "^5.2.3",
-    "winston": "^3.8.1",
-    "ws": "^8.8.1"
+    "winston": "^3.8.2",
+    "ws": "^8.9.0"
   },
   "devDependencies": {
-    "@types/jest": "^27.4.1",
-    "@types/node": "^18.7.14",
-    "jest": "^27.5.1",
+    "@types/jest": "^29.1.1",
+    "@types/node": "^18.7.23",
+    "jest": "^29.1.2",
     "prettier": "^2.7.1",
-    "ts-jest": "^27.1.4",
+    "ts-jest": "^29.0.3",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.4"
   },
   "scripts": {
     "postinstall": "npm run build",
