@@ -4,8 +4,12 @@ import * as path from "path";
 import * as fs from "fs";
 
 // These values are probably good starting points, but you should expect to tweak them for your application
-const maxMemoryAlloted = process.env.maxMemoryAlloted || 500;
-const maxResqueQueueLength = process.env.maxResqueQueueLength || 1000;
+const maxMemoryAlloted = process.env.maxMemoryAlloted
+  ? parseInt(process.env.maxMemoryAlloted)
+  : 500;
+const maxResqueQueueLength = process.env.maxResqueQueueLength
+  ? parseInt(process.env.maxResqueQueueLength)
+  : 1000;
 
 enum StatusMessages {
   healthy = "Node Healthy",
@@ -21,16 +25,13 @@ const packageJSON: PackageJson = JSON.parse(
 );
 
 export class Status extends Action {
-  constructor() {
-    super();
-    this.name = "status";
-    this.description = "I will return some basic information about the API";
-    this.outputExample = {
-      id: "192.168.2.11",
-      actionheroVersion: "9.4.1",
-      uptime: 10469,
-    };
-  }
+  name = "status";
+  description = "I will return some basic information about the API";
+  outputExample = {
+    id: "192.168.2.11",
+    actionheroVersion: "9.4.1",
+    uptime: 10469,
+  };
 
   async run() {
     let nodeStatus = StatusMessages.healthy;
